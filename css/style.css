@@ -1,0 +1,347 @@
+@charset "UTF-8";
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+/*Colores Globales*/
+/*tamaños textos*/
+/*GENERAL*/
+body {
+  font-size: 1.2rem;
+  line-height: 1.4em;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background-color: #283593;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-delay: 0s;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+main {
+  margin-top: 10rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.conteiner {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-content: center;
+}
+
+#fixed {
+  transform: translate(1350px, 425px);
+  position: fixed;
+  z-index: 4;
+}
+
+/*CONTENIDO*/
+.avisos {
+  color: black;
+}
+
+/*HEADER*/
+.menu {
+  background-image: linear-gradient(to bottom, #0b2edb, #3f3c3c);
+  color: white;
+  padding-right: 0;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #001064;
+  color: white;
+}
+
+.seccion {
+  box-shadow: 0 10px 30px -10px black;
+}
+
+.seccion--otros {
+  background: #283593;
+  color: white;
+  border-radius: 1rem;
+}
+
+.seccion--destacado {
+  background: #283593;
+  color: white;
+  border-radius: 1rem;
+}
+
+.seccion__text {
+  font-size: 1rem;
+}
+
+.seccion__title {
+  font-size: 2rem;
+}
+
+/*Contenedor imagenes*/
+.contenedorGaleria {
+  height: auto;
+  background-color: #0a2a79;
+  display: grid;
+}
+
+.imagen {
+  min-height: 200px;
+  min-width: 200px;
+  border: 2px solid black;
+}
+
+.imagen:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+  filter: sepia(2);
+}
+
+.imagen1 {
+  grid-column: 1;
+  grid-row: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-image: url(/img/img1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.imagen2 {
+  grid-area: "imagen2";
+  background-image: url(/img/img2.jpg);
+  background-size: cover;
+}
+
+.imagen3 {
+  grid-area: "imagen3";
+  grid-column: 2;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  background-image: url(/img/img3.jpg);
+  background-size: cover;
+}
+
+.imagen4 {
+  grid-area: "imagen4";
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background-image: url(/img/img4.jpg);
+  background-size: cover;
+}
+
+.imagen5 {
+  grid-area: "imagen5";
+  background-image: url(/img/img5.jpg);
+  background-size: cover;
+}
+
+.imagen6 {
+  grid-area: "imagen6";
+  background-image: url(/img/img6.jpg);
+  background-size: cover;
+}
+
+.imagen7 {
+  grid-area: "imagen7";
+  background-image: url(/img/img7.jpg);
+  background-size: cover;
+}
+
+.imagen8 {
+  grid-area: "imagen8";
+  grid-column: 2;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  background-image: url(/img/img8.jpg);
+  background-size: cover;
+}
+
+/*Aqui termina galeria*/
+.card, .card--nueva {
+  margin: 1.5rem;
+  max-width: 300px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px -10px black;
+}
+
+.cardjugador--light {
+  background: rgba(255, 255, 255, 0.521);
+  color: black;
+}
+
+.cardequipo--dark {
+  background: black;
+  color: white;
+}
+
+.card__text {
+  font-size: 1rem;
+}
+
+.card__title {
+  font-size: 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 7px 12px;
+  border: 1px solid #d5d5d5;
+  background-image: linear-gradient(#eee, #ddd);
+  font: 700 13px/18px Helvetica, arial;
+}
+
+.button--jugador-reclutar {
+  color: #fff;
+  background: #569e3d linear-gradient(#79d858, #569e3d) repeat-x;
+  border-color: #4a993e;
+}
+
+.button--equipo-jugar {
+  color: white;
+  background: red;
+}
+
+/*
+- operaciones + -  * 
+- condicional
+- bucle *3
+- each 
+- maps redes
+- extend
+- mixing
+*/
+/*CONDICIONAL y OPERACIONES*/
+.condicional {
+  color: #c5b1b1;
+  font-size: 10rem/4;
+}
+
+/*BUCLE*/
+.card-1 {
+  max-width: 150px;
+  background-color: rgba(255, 255, 255, 0.521);
+}
+
+.card-2 {
+  max-width: 300px;
+  background-color: rgba(255, 255, 255, 0.521);
+}
+
+.card-3 {
+  max-width: 450px;
+  background-color: rgba(255, 255, 255, 0.521);
+}
+
+/* EACH*/
+.jugador-card {
+  background-image: url("/img/jugador.png");
+  width: 325px;
+  height: 325px;
+}
+
+.equipoo-card {
+  background-image: url("/img/equipoo.png");
+  width: 325px;
+  height: 325px;
+}
+
+.cancha-card {
+  background-image: url("/img/cancha.png");
+  width: 325px;
+  height: 325px;
+}
+
+/*MAPS*/
+.color--twitter {
+  background-color: #55acee;
+  color: black;
+  max-width: 100px;
+  box-shadow: 0 10px 30px -10px black;
+  margin: 1.5rem;
+  padding: 1.5rem;
+}
+
+.color--facebook {
+  background-color: #004ef5;
+  color: black;
+  max-width: 100px;
+  box-shadow: 0 10px 30px -10px black;
+  margin: 1.5rem;
+  padding: 1.5rem;
+}
+
+.color--linkedin {
+  background-color: #fcfcfc;
+  color: black;
+  max-width: 100px;
+  box-shadow: 0 10px 30px -10px black;
+  margin: 1.5rem;
+  padding: 1.5rem;
+}
+
+/*EXTEND*/
+.card--nueva {
+  background-color: lightpink;
+}
+
+/*MIXING*/
+.card-m1 {
+  max-width: 200px;
+  background-color: red;
+}
+
+.card-m2 {
+  max-width: 400px;
+  background-color: blue;
+}
+
+.cuadroTexto {
+  margin-top: 2rem;
+  padding: 1rem 1rem 1rem 1rem;
+  box-shadow: 0 10px 30px -10px black;
+}
+
+.cuadroTexto--letrachica {
+  background: #793b43;
+  color: white;
+}
+
+.cuadroTexto--titulo {
+  background: #283593;
+  color: white;
+}
+
+.cuadroTexto__text {
+  font-size: 1rem;
+}
+
+.cuadroTexto__title {
+  font-size: 2rem;
+}
+
+.cuadroTexto__textsmall {
+  font-size: 0.7rem;
+}
+
+/*# sourceMappingURL=style.css.map */

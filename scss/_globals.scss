@@ -1,0 +1,83 @@
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+/*Colores Globales*/
+
+$colorfooter: #001064;
+$colornavBar: linear-gradient(to bottom, #0b2edb, rgb(63, 60, 60));
+$colorBody: #283593;
+$colorSeccion-destacado: #283593;
+$colorSeccion-otros: #283593;
+$colorTipografia: white;
+$colorcuadro-letrachica: rgb(121, 59, 67);
+
+$colorCard-Jugador: rgba(255, 255, 255, 0.521);
+$colorCard-Equipo: black;
+$colorCard-Cancha: green;
+
+/*tamaños textos*/
+$textolegales: 0.7rem;
+$textoTitulos: 2rem;
+$textocomun: 1rem;
+
+/*GENERAL*/
+body {
+  font-size: 1.2rem;
+  line-height: 1.4em;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background-color: $colorBody;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-delay: 0s;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+main {
+  margin-top: 10rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.conteiner {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-content: center;
+}
+#fixed {
+  transform: translate(1350px, 425px);
+  position: fixed;
+  z-index: 4;
+}
+
+/*CONTENIDO*/
+
+.avisos {
+  color: black;
+}
+
+/*HEADER*/
+.menu {
+  background-image: $colornavBar;
+  color: white;
+  padding-right: 0;
+}
+
+/*FOOTER*/
+footer {
+  background-color: $colorfooter;
+  color: white;
+}

@@ -1,0 +1,25 @@
+.cuadroTexto {
+  margin-top: 2rem;
+  padding: 1rem 1rem 1rem 1rem;
+  box-shadow: 0 10px 30px -10px black;
+}
+.cuadroTexto--letrachica {
+  background: $colorcuadro-letrachica;
+  color: white;
+}
+
+.cuadroTexto--titulo {
+  background: #283593;
+  color: white;
+}
+
+.cuadroTexto__text {
+  font-size: $textocomun;
+}
+
+.cuadroTexto__title {
+  font-size: $textoTitulos;
+}
+.cuadroTexto__textsmall {
+  font-size: $textolegales;
+}

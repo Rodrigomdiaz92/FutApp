@@ -1,0 +1,46 @@
+.card {
+  margin: 1.5rem;
+  max-width: 300px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px -10px black;
+}
+
+.cardjugador--light {
+  background: $colorCard-Jugador;
+  color: black;
+}
+
+.cardequipo--dark {
+  background: $colorCard-Equipo;
+  color: white;
+}
+
+.card__text {
+  font-size: $textocomun;
+}
+
+.card__title {
+  font-size: $textoTitulos;
+}
+
+.flex {
+  display: flex;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 7px 12px;
+  border: 1px solid #d5d5d5;
+  background-image: linear-gradient(#eee, #ddd);
+  font: 700 13px/18px Helvetica, arial;
+}
+.button--jugador-reclutar {
+  color: #fff;
+  background: #569e3d linear-gradient(#79d858, #569e3d) repeat-x;
+  border-color: #4a993e;
+}
+.button--equipo-jugar {
+  color: white;
+  background: red;
+}

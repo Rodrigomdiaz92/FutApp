@@ -1,0 +1,11 @@
+{
+  "name": "futapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss/style.scss css/style.css"
+  },
+  "author": "Rodrigo Martin Diaz",
+  "license": "ISC"
+}
