@@ -45,13 +45,13 @@
   grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 2;
-  background-image: url(./img/img1.jpg);
+  background-image: url(../img/img1.jpg);
   background-size: cover;
   background-position: center;
 }
 .imagen2 {
   grid-area: "imagen2";
-  background-image: url(./img/img2.jpg);
+  background-image: url(../img/img2.jpg);
   background-size: cover;
 }
 .imagen3 {
@@ -59,29 +59,29 @@
   grid-column: 2;
   grid-column-start: 3;
   grid-column-end: 5;
-  background-image: url(./img/img3.jpg);
+  background-image: url(../img/img3.jpg);
   background-size: cover;
 }
 .imagen4 {
   grid-area: "imagen4";
   grid-row-start: 2;
   grid-row-end: 4;
-  background-image: url(./img/img4.jpg);
+  background-image: url(../img/img4.jpg);
   background-size: cover;
 }
 .imagen5 {
   grid-area: "imagen5";
-  background-image: url(./img/img5.jpg);
+  background-image: url(../img/img5.jpg);
   background-size: cover;
 }
 .imagen6 {
   grid-area: "imagen6";
-  background-image: url(./img/img6.jpg);
+  background-image: url(../img/img6.jpg);
   background-size: cover;
 }
 .imagen7 {
   grid-area: "imagen7";
-  background-image: url(./img/img7.jpg);
+  background-image: url(../img/img7.jpg);
   background-size: cover;
 }
 .imagen8 {
@@ -89,7 +89,7 @@
   grid-column: 2;
   grid-column-start: 3;
   grid-column-end: 5;
-  background-image: url(./img/img8.jpg);
+  background-image: url(../img/img8.jpg);
   background-size: cover;
 }
 
