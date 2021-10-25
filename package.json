@@ -1,7 +1,7 @@
 {
   "name": "futapp",
   "version": "1.0.0",
-  "description": "",
+  "description": "web de busqueda de jugadores y equipos de futbol, ademas se podra encontar y alquilar canchas de futbol",
   "main": "index.js",
   "scripts": {
     "compile:sass": "sass --watch scss/style.scss css/style.css"
