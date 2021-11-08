@@ -1,87 +1,10 @@
-/*
-- operaciones + -  * 
-- condicional
-- bucle *3
-- each 
-- maps redes
-- extend
-- mixing
-*/
-
-/*CONDICIONAL y OPERACIONES*/
-$condicional: 3;
-.condicional {
-  @if $condicional == 2 {
-    color: rgb(15, 15, 15);
-    font-size: 0.5rem * 4;
-  } @else if $condicional == 3 {
-    color: rgb(197, 177, 177);
-    font-size: 10rem / 4;
-  } @else if $condicional == 4 {
-    color: rgb(140, 209, 140);
-    font-size: 6rem - 3rem;
-  } @else {
-    color: black;
-    font-size: 1.4rem /2;
-  }
+form {
+  color: black;
+  font-size: 1rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
-/*BUCLE*/
-
-$card: 3;
-$i: 1;
-
-@for $i from 1 through $card {
-  .card-#{$i} {
-    max-width: 150px * $i;
-    background-color: $colorCard-Jugador;
-  }
-}
-
-/* EACH*/
-
-@each $clase in jugador, equipoo, cancha {
-  .#{$clase}-card {
-    background-image: url("/img/#{$clase}.png");
-    width: 325px;
-    height: 325px;
-  }
-}
-
-/*MAPS*/
-$redes: (
-  twitter: #55acee,
-  facebook: #004ef5,
-  linkedin: #fcfcfc,
-);
-
-@each $red, $color in $redes {
-  .color--#{$red} {
-    background-color: $color;
-    color: black;
-    max-width: 50px * 2;
-    box-shadow: 0 10px 30px -10px black;
-    margin: 1.5rem;
-    padding: 1.5rem;
-  }
-}
-
-/*EXTEND*/
-
-.card--nueva {
-  @extend .card;
-  background-color: lightpink;
-}
-
-/*MIXING*/
-
-@mixin card($px, $background) {
-  max-width: $px;
-  background-color: $background;
-}
-.card-m1 {
-  @include card(200px, red);
-}
-.card-m2 {
-  @include card(400px, blue);
+label {
+  margin-left: 1rem;
 }
