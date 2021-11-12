@@ -121,11 +121,15 @@
         <h1 class="text-center">Contactanos</h1>
       </div>
       <div class="container mt-4">
-        <form action="">
+        <form
+          action="https://formsubmit.co/rodrigo.m.diaz@hotmail.com"
+          method="POST"
+        >
           <div class="row">
             <div class="form-floating mb-3">
               <input
                 type="name"
+                name="Nombre"
                 class="form-control"
                 id="floatingInput"
                 placeholder="Su Nombre"
@@ -135,6 +139,7 @@
             <div class="form-floating">
               <input
                 type="subname"
+                name="Apellido"
                 class="form-control"
                 id="floatingPassword"
                 placeholder="Su Apellido"
@@ -144,6 +149,7 @@
             <div class="form-floating mb-3 mt-3">
               <input
                 type="mail"
+                name="correo electonico"
                 class="form-control"
                 id="floatingPassword"
                 placeholder="Ejemplo@Ejemplo.com"
@@ -153,6 +159,7 @@
             <div class="form-floating mb-3 mt-3">
               <input
                 type="phone"
+                name="celular"
                 class="form-control"
                 id="floatingPassword"
                 placeholder="+549-(cod Area) - (Celular S/15)"
@@ -160,7 +167,11 @@
               <label for="floatingPassword">Telefono De Contacto</label>
             </div>
             <div class="form-floating mb-3">
-              <select class="form-select" aria-label="Default select example">
+              <select
+                class="form-select"
+                name="Asunto"
+                aria-label="Default select example"
+              >
                 <option selected="">Seleccione Asunto</option>
                 <option value="1">Informacion Jugadores</option>
                 <option value="2">Informacion Dueños de Canchas</option>
@@ -171,6 +182,7 @@
             <div class="form-check">
               <input
                 class="form-check-input"
+                name="Tipo de usuario"
                 type="radio"
                 name="flexRadioDefault"
                 id="flexRadioDefault1"
@@ -194,6 +206,7 @@
             <div class="form-floating">
               <textarea
                 class="form-control"
+                name="Mensaje"
                 placeholder="Leave a comment here"
                 id="floatingTextarea2"
                 style="height: 200px"
